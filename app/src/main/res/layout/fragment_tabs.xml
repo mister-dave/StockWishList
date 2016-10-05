@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:psts="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvheaderfrag2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center_horizontal"
+                android:text="Fragmen   t 2"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:visibility="gone" />
+
+            <com.astuetz.PagerSlidingTabStrip
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_below="@+id/tvheaderfrag2"
+                android:layout_gravity="center"
+                android:background="?attr/colorPrimary"
+                android:elevation="5dp"
+                psts:pstsIndicatorColor="@color/colorAccent"
+                psts:pstsIndicatorHeight="5dp"
+                psts:pstsShouldExpand="true"
+                psts:pstsTabTextAllCaps="false"
+                psts:pstsTabTextColor="@color/palette_white"
+                psts:pstsTabTextSize="15dp" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="800dp"
+                android:layout_below="@+id/tabs"
+                android:layout_gravity="center"
+                android:background="@color/palette_white" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

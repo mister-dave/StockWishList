@@ -3,4 +3,51 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorLight">#8C9EFF</color>
+    <color name="colorMed">#536DFE</color>
+    <color name="colorDark">#3D5AFE</color>
+    <color name="colorDarkest">#304FFE</color>
+
+
+
+    <color name="palette_fog">#F2F2F2</color>
+    <color name="palette_white">#ffffff</color>
+    <color name="palette_black">#000000</color>
+    <color name="palette_scarlet">#D0021B</color>
+    <color name="palette_gold">#C7901B</color>
+    <color name="palette_darkness">#273043</color>
+    <color name="palette_marine">#072C6A</color>
+    <color name="palette_cosb_textcolor_marine">#072C6A</color>
+    <color name="wgu_text_on_liberty">#0066A2</color>
+    <color name="palette_bluish">#266DD3</color>
+    <color name="palette_flat_blue">#3E7CB1</color>
+    <color name="palette_twilight">#0D324D</color>
+    <color name="palette_warm_grey">#999999</color>
+    <color name="palette_silver">#CCCCCC</color>
+    <color name="palette_haze">#E5E5E5</color>
+    <color name="palette_avocado">#89A537</color>
+    <color name="palette_blue_green">#4886a1</color>
+
+
+    <color name="palette_apptour_green">#89A537</color>
+    <color name="palette_apptour_orange">#F6BE5F</color>
+    <color name="palette_apptour_red_pink">#DF744F</color>
+    <color name="palette_apptour_red">#C02F44</color>
+    <color name="palette_apptour_grey">#91928E</color>
+
+    <color name="palette_orange">#F7941E</color>
+    <color name="palette_cherry">#BE1E2D</color>
+    <color name="palette_mantis">#558d44</color>
+    <color name="palette_bondi">#4486A1</color>
+
+
+    <color name="palette_sand">#f0eee5</color>
+    <color name="palette_ivory">#f9f9f5</color>
+    <color name="palette_khaki">#e2dccb</color>
+    <color name="palette_liberty">#0066a2</color>
+    <color name="person_card_main_text">#215482</color>
+    <color name="person_card_main_text_jet">#333333</color>
+
+
+
 </resources>

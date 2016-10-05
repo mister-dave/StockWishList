@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlFragmentBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/palette_white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/menu_yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            fab:menu_animationDelayPerItem="10"
+            fab:menu_colorNormal="@color/colorAccent"
+            fab:menu_colorPressed="@color/colorDark"
+            fab:menu_colorRipple="@color/colorMed"
+            fab:menu_shadowColor="#444">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabMenuItem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_menu_camera"
+                fab:fabSize="mini"
+                fab:fab_colorNormal="@color/palette_cherry"
+                fab:fab_label="Menu item 1" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabMenuItem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_menu_send"
+                fab:fab_colorNormal="@color/palette_avocado" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabMenuItem3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_menu_gallery"
+                fab:fab_colorNormal="@color/colorAccent" />
+        </com.github.clans.fab.FloatingActionMenu>
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="4dp"
+        android:backgroundTint="@color/colorMed"
+        tools:cardCornerRadius="8dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Get a Quote"
+            android:textColor="@color/palette_white"
+            android:textSize="30dp" />
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardview"
+        android:background="@color/palette_white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!--// Results:-->
+
+        <TextView
+            android:id="@+id/tvStockQuote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+
+        <!--// Editable Stock input field-->
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etStockSymbol"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:hint="Your stock symbol:"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--// ENTER BUTTON-->
+
+            <Button
+                android:id="@+id/bEnter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Enter" />
+
+            <!--// CLEAR BUTTON-->
+
+            <Button
+                android:id="@+id/bClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Clear" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
