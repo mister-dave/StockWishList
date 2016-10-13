@@ -17,6 +17,7 @@ import android.widget.EditText;
 
 import com.example.david.stockwishlist.R;
 
+
 public class FragmentNotification extends BaseFragment {
     private EditText ed2, ed3;
     private Button b1;
@@ -29,7 +30,6 @@ public class FragmentNotification extends BaseFragment {
         return fragment;
     }
 
-
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
@@ -37,7 +37,6 @@ public class FragmentNotification extends BaseFragment {
 
 
     }
-
 
     @Override
     int getFragmentLayoutResourceId() {
@@ -62,7 +61,6 @@ public class FragmentNotification extends BaseFragment {
 
 
     }
-
 
     public void delayedExecut() {
         final Handler handler = new Handler();
@@ -161,9 +159,7 @@ public class FragmentNotification extends BaseFragment {
         return super.onOptionsItemSelected(item);
     }
 
-
     public void notification2() {
-
 
     }
 }

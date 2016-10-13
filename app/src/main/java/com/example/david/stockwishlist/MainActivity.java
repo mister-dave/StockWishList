@@ -19,9 +19,6 @@ import layout.FragmentTabs;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-//    @Inject
-//    StockQuoteDAO stockQuoteDAO;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +31,8 @@ public class MainActivity extends AppCompatActivity
 //        stockQuoteDAO.createOrUpdate(entity);
 //        getStockDataFromLocalDB();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        // TODO: 10/6/16 fix this commented out line
+        //setSupportActionBar(toolbar);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(

@@ -2,12 +2,13 @@ package layout;
 
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
+import android.support.v4.view.ViewPager.OnPageChangeListener;
 
-import com.example.david.stockwishlist.R;
 import com.astuetz.PagerSlidingTabStrip;
+import com.example.david.stockwishlist.R;
 
 
-public class FragmentTabs extends BaseFragment implements ViewPager.OnPageChangeListener {
+public class FragmentTabs extends BaseFragment implements OnPageChangeListener {
 
 
     public static BaseFragment newInstance() {
@@ -16,7 +17,6 @@ public class FragmentTabs extends BaseFragment implements ViewPager.OnPageChange
         fragment.setArguments(bundle);
         return fragment;
     }
-
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {

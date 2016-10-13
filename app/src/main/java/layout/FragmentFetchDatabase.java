@@ -19,7 +19,9 @@ import dao.StockQuoteDAO;
 import entities.StockQuoteEntity;
 import roboguice.RoboGuice;
 
-public class FragmentFetchDatabase extends BaseFragment implements View.OnClickListener {
+import static android.view.View.*;
+
+public class FragmentFetchDatabase extends BaseFragment implements OnClickListener {
 
     private TextView tvData;
     private CheckBox cbStocks, cbMutualFunds;
