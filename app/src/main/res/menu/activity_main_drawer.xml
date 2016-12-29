@@ -14,6 +14,11 @@
             android:id="@+id/nav_thirdFrag"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Database" />
+        <item
+            android:id="@+id/nav_fourthFrag"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Green Fragment"
+            />
 
     </group>
 

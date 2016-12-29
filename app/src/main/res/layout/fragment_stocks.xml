@@ -58,7 +58,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_margin="4dp"
-        android:backgroundTint="@color/colorMed"
+        android:backgroundTint="@color/colorPrimary"
         tools:cardCornerRadius="8dp">
 
         <TextView

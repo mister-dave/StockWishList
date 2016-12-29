@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import layout.FragmentFetchDatabase;
+import layout.FragmentGreenScreen;
 import layout.FragmentStocks;
 import layout.FragmentTabs;
 
@@ -92,6 +93,9 @@ public class MainActivity extends AppCompatActivity
                 break;
             case R.id.nav_thirdFrag:
                 fragmentClass = FragmentFetchDatabase.class;
+                break;
+            case R.id.nav_fourthFrag:
+                fragmentClass = FragmentGreenScreen.class;
                 break;
             default:
                 fragmentClass = FragmentStocks.class;
