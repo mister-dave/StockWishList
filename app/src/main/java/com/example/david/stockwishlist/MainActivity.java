@@ -32,12 +32,11 @@ public class MainActivity extends AppCompatActivity
 //        stockQuoteDAO.createOrUpdate(entity);
 //        getStockDataFromLocalDB();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        // TODO: 10/6/16 fix this commented out line
-        //setSupportActionBar(toolbar);
+        setSupportActionBar(toolbar);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
