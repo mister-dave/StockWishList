@@ -39,6 +39,7 @@ public class StockQuoteDAO extends DatabaseAccesor {
         }
     }
 
+    // Get a StockQuoteEntity by passing in a stock symbol
     public StockQuoteEntity getStockEntityBySymbol(String symbol) {
         if (symbol == null || symbol.isEmpty())
             return null;
@@ -56,6 +57,7 @@ public class StockQuoteDAO extends DatabaseAccesor {
         }
     }
 
+    // Get a List of StockQuoteEntities by searching for type "mutual fund" or type "stock"
     public List<StockQuoteEntity> getListStockEntitiesByType(String type) {
         try {
             QueryBuilder<StockQuoteEntity, Integer> qb = getDatabase().getDao(StockQuoteEntity.class).queryBuilder();
