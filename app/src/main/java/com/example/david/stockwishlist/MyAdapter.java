@@ -5,15 +5,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import java.util.List;
+
+import entities.StockQuoteEntity;
 
 /**
  * Created by David on 3/14/17.
  */
 
-// // TODO: 3/29/17 Should I change the mDataset from "String []" to something compatible with what the DAO returns? 
-
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
-    private String[] mDataset;
+    private List<StockQuoteEntity> mDataset;
 
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
@@ -29,7 +30,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     }
 
     // Constructor
-    public MyAdapter(String [] myDataset) {
+    public MyAdapter(List<StockQuoteEntity> myDataset) {
         mDataset = myDataset;
     }
 
@@ -49,11 +50,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     public void onBindViewHolder(MyAdapter.ViewHolder holder, int position) {
         // get elements from your dataset at this position
         // replace the contents of the view with that element
-        holder.mTextView.setText(mDataset[position]);
+        // // TODO: 3/31/17 Is this CharSequence necessary??
+        holder.mTextView.setText(String.valueOf(mDataset.get(position)));
     }
 
     @Override
     public int getItemCount() {
-        return mDataset.length;
+        return mDataset.size();
     }
 }

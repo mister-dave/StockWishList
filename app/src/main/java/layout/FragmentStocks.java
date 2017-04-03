@@ -71,22 +71,22 @@ public class FragmentStocks extends BaseFragment implements View.OnClickListener
 
     @Override
     void findViews() {
+        // find views
         fabMenu = (FloatingActionMenu) mRootView.findViewById(R.id.menu_yellow);
         fabItem1 = (FloatingActionButton) mRootView.findViewById(R.id.fabMenuItem1);
         fabItem2 = (FloatingActionButton) mRootView.findViewById(R.id.fabMenuItem2);
         fabItem3 = (FloatingActionButton) mRootView.findViewById(R.id.fabMenuItem3);
         rlBackground = (RelativeLayout) mRootView.findViewById(R.id.rlFragmentBackground);
-
         tvStockQuoteData = (TextView) mRootView.findViewById(R.id.tvStockQuote);
         etStockSymbol = (EditText) mRootView.findViewById(R.id.etStockSymbol);
         bEnter = (Button) mRootView.findViewById(R.id.bEnter);
         bClear = (Button) mRootView.findViewById(R.id.bClear);
 
+        // set click listeners
         rlBackground.setOnClickListener(clickListener);
         fabItem1.setOnClickListener(clickListener);
         fabItem2.setOnClickListener(clickListener);
         fabItem3.setOnClickListener(clickListener);
-
         bEnter.setOnClickListener(this);
         bClear.setOnClickListener(this);
 
@@ -165,7 +165,6 @@ public class FragmentStocks extends BaseFragment implements View.OnClickListener
 
 
     }
-
 
     @Override
     public void onClick(View view) {

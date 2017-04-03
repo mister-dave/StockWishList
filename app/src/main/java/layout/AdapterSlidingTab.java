@@ -21,6 +21,8 @@ public class AdapterSlidingTab extends FragmentPagerAdapter {
                 return "Database";
             case 2:
                 return "Notifications";
+            case 3:
+                return "Stock Cards";
 
         }
 
@@ -29,7 +31,7 @@ public class AdapterSlidingTab extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+        return 4;
     }
 
     @Override
@@ -41,6 +43,8 @@ public class AdapterSlidingTab extends FragmentPagerAdapter {
                 return new FragmentFetchDatabase();
             case 2:
                 return new FragmentNotification();
+            case 3:
+                return new FragmentStockCards();
 
         }
         return new FragmentStocks();
